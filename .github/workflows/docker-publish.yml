@@ -27,12 +27,11 @@ jobs:
   integration:
     # REPLACE GITHUB_USERNAME and GITHUB_REPONAME with your own values.
     # This is needed for the workflow_call event to complete successfully.
-    uses: GITHUB_USERNAME/GITHUB_REPONAME/.github/workflows/python-app.yml@main
+    uses: console6500/use-supplied-py/.github/workflows/python-app.yml@main
 
     # Pass permissions to the called workflow
     permissions:
       contents: read
-      packages: write
 
   build:
 
